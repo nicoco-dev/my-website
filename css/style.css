@@ -53,7 +53,7 @@ header {
 }
 
 .brand {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 800;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -69,4 +69,101 @@ header {
 .nav-links > a {
     color: inherit;
     text-decoration: none;
+}
+
+/* nav-list hover */
+
+.nav-links :hover{
+    color: var(--text);
+}
+
+        /* Main starts  */
+/* Introl */
+
+.intro-start {
+    width: 100%;
+    display: flex;
+    gap: 10%;
+    width: min(1120px, 100% - 2rem);
+    margin: 0px auto;
+    padding-top: 130px;
+}
+
+.intro-info {
+    width: 70%;
+}
+
+.intro-info h5 {
+    color: rgb(232 163 61);
+}
+
+.intro-info > h1 {
+    font-size: 2.3rem;
+    font-weight:700;
+}
+
+.info-detail {
+    width: 600px;
+}
+
+.intro-link {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.intro-link > a {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.intro-link .orange {
+    color: var(--bg-soft);
+    border: 1px solid rgb(232 163 61);
+    background-color: rgb(232 163 61);
+    transition: background-color 2s;
+}
+
+.orange:hover {
+    background-color: rgba(189, 113, 1, 0.973);
+    color: var(--bg);
+}
+
+.intro-link .white {
+    color: var(--text);
+    border: 1px solid var(--muted);
+    background-color: var(--bg-soft);
+    transition: background-color 2s;
+}
+
+.white:hover {
+    background-color: var(--text);
+    color: var(--bg-soft);
+}
+
+
+.intro-n{
+    display: flex;
+    align-items: center;
+    color: aqua;
+    font-size: 2rem;
+    border: 5px solid aqua;
+    padding: 80px;
+    /* width: 20%; */
+    width: 200px;
+    height: 150px;
+    background: radial-gradient(circle at top, rgba(138, 109, 255, 0.349), transparent 30%), linear-gradient(180deg, var(--bg), #0d1323 100%);
+    transition: width 2s, height 4s, background-image 3s;
+}
+
+/* N animation */
+.intro-n:hover {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 250px;
+    background: linear-gradient(to top, purple, black);
+    transition: widtht 2s, height 4s, background-image 6s;
 }
