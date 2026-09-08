@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Nicho — My Website</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -13,7 +13,7 @@
         <div class="container nav">
            <div class="logo">
             <!-- not added logo -->
-                <img src="" alt="logo">
+                <div class="logo-color"></div>
                 <p class="brand">Nicho</p>
            </div> 
         
@@ -21,8 +21,9 @@
             <nav class="nav-links">
                 <a href="#about">About</a>
                 <a href="#skill">Skill</a>
-                <a href="#project">Project</a>
                 <a href="#experience">Experience</a>
+                <a href="#education">Education</a>
+                <a href="#project">Project</a>
                 <a href="#contact">Conatct</a>
             </nav>
         </div>
@@ -33,12 +34,12 @@
             <div class="intro-start">
                 <div class="intro-info">
                     <h5>Designer · Developer · Builder</h5>
-                    <h1>
-                        Hi, I'm Nicho.<br>I build things for <br>the web.
+                    <h1 class="reveal">
+                        Hi, I'm Nicho.<br>I build product that<br><span class="brand-style"> <p>solve real problems</span>
                     </h1>
                     <div class="info-detail">
                         <p>
-                            I'm a Fullstack engineer · I build scalable websites that solve real problems.
+                            Fullstack engineer · I build scalable websites and product for starups and teams. I turn messy problems into fast, scalable products that convert visitors into customers, from design and frontend to backend and everything bewtween. The goal is never just a website, it's growth you can measure.
                         </p>
                     </div>
 
@@ -70,7 +71,7 @@
                 <h1>Skills</h1>
                 <div class="skill-container">
 
-                    <div class="skill-info">
+                    <div class="skill-info reveal">
                         <h4>Core</h4>
                         <ul>
                             <p>HTML & CSS</p>
@@ -81,7 +82,7 @@
                         </ul>
                     </div>
 
-                    <div class="skill-info">
+                    <div class="skill-info reveal">
                         <h4>Tools</h4>
                         <ul>
                             <p>Git & GitHub</p>
@@ -90,11 +91,19 @@
                         </ul>
                     </div>
 
-                    <div class="skill-info">
-                        <h4>Additional skill</h4>
+                    <div class="skill-info reveal">
+                        <h4>SoftWare</h4>
                         <ul>
                             <p>WordPress / CMS concepts</p>
-                            <p>MicroSoft Office</p>
+                            <p>MS Office</p>
+                        </ul>
+                    </div>
+
+                    <div class="skill-info reveal">
+                        <h4>Soft Skills</h4>
+                        <ul>
+                            <p>Team Work</p>
+                            <p>Communication</p>
                         </ul>
                     </div>
                 </div>
@@ -102,6 +111,34 @@
         </section>
 
         <div class="hr"></div>
+
+        <section id="experience">
+            <div class="exper-container">
+                <h1>Experience</h1>
+                <div class="exper-intro">
+
+                    <article class="exper-section reveal">
+                        <div class="line"></div>
+                        <div class="exper-item">
+                            <p>March 2026</p>
+                            <h2>Industrial Training Placement, CCT</h2>
+                            <p>Web development coursework combined with lab support duties — connectivity checks, monitoring CBT exam sessions, and basic hardware troubleshooting. Currently finishing a 30-page IT logbook and report to close out the placement.</p>
+                        </div>
+                    </article>
+
+                    <article class="exper-section reveal">
+                        <div class="line"></div>
+                        <div class="exper-item">
+                            <p>mid-August 2026</p>
+                            <h2>Advanced Web development Program (Scholarship)</h2>
+                            <p>Selected for a scholarship-based advanced web development program. Currently deepening my PHP skills alongside my existing JavaScript and Tailwind CSS work.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+        </section>
+        <script src="index.js"></script>
         
     </main>
 </body>

@@ -51,10 +51,19 @@ header {
 
 .logo {
     display: flex;
-    gap: 10px;
+    justify-content: center;
+    gap: 5px;
+}
+
+.logo-color {
+    width: 20px;
+    height: 20px;
+    border: 5px solid rgb(232 163 61);
+    border-radius: 100%;
 }
 
 .brand {
+    text-align: center;
     font-size: 1rem;
     font-weight: 800;
     letter-spacing: 0.06em;
@@ -103,6 +112,10 @@ header {
     font-size: 2.3rem;
     font-weight:700;
 }
+
+/* .brand-style p {
+    color: linear-gradient(to left, rgb(232 163 61), white);
+} */
 
 .info-detail {
     width: 600px;
@@ -224,4 +237,60 @@ header {
 
 .skill-info > ul {
     line-height: 1.8;
+}
+
+/* Experience section */
+
+#experience {
+    width: min(1120px, 100% - 2rem);
+    margin: 0px auto;
+}
+
+.exper-container {
+    margin: 50px 0px 50px;
+}
+
+.exper-container > h1 {
+    margin-bottom: 20px;
+}
+
+.exper-intro {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    
+}
+
+.exper-section {
+    display: flex;
+    gap: 25px;
+    /* padding: 16px;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 8px; */
+}
+
+.exper-section > .line {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid gray;
+}
+
+.exper-item > h2 {
+    color: rgb(232, 163, 61);
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.exper-item > p {
+    width: 46vw;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
